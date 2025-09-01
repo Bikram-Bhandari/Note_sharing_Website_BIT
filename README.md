@@ -22,7 +22,7 @@ JavaScript (Vanilla)
 
 📂 Setup Instructions
 # Clone the repository
-git clone https://github.com/your-username/Note_Sharing_Website_BIT.git
+git clone [https://github.com/your-username/Note_Sharing_Website_BIT.git](https://github.com/Bikram-Bhandari/Note_sharing_Website_BIT/tree/main)
 
 # Open project folder
 cd Note_Sharing_Website_BIT
