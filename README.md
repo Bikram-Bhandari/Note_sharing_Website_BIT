@@ -3,21 +3,18 @@
 A simple and responsive frontend-only website for sharing and organizing academic notes, designed as a BIT project.
 
 ✨ Features
-
 Modern and responsive UI
-
 Sections for uploading, browsing, and downloading notes (UI only)
-
 Notes categorized by subject and semester
-
 Easy-to-customize static design
 
+
+Screenshort
+![gfhfg](https://github.com/user-attachments/assets/f12db8e2-a531-4fa4-892c-529a09643716)
+![hfgh](https://github.com/user-attachments/assets/af6df7c7-e893-48d9-b769-ad69f68701ca)
 🛠️ Tech Stack
-
-HTML5
-
-CSS3
-
+HTML
+CSS
 JavaScript (Vanilla)
 
 📂 Setup Instructions
