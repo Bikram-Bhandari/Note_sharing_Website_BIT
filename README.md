@@ -32,7 +32,7 @@ Open index.html in your browser
 
 🌐 Live Demo
 
-🔗 View Demo hamrobit.netlify.app
+🔗 View Demo[ hamrobit.netlify.app](https://hamrobit.netlify.app/)
 
 👉 For the short GitHub repo tagline (the line under the repo name), you can use:
 "A responsive frontend website for academic note sharing – BIT Project"
