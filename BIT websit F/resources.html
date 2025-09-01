@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Hamro BIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Hamro BIT</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Semester Notes <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="semester-notes.html">1st Semester</a>
+                            <a href="semester-notes.html">2nd Semester</a>
+                            <a href="semester-notes.html">3rd Semester</a>
+                            <a href="semester-notes.html">4th Semester</a>
+                            <a href="semester-notes.html">5th Semester</a>
+                            <a href="semester-notes.html">6th Semester</a>
+                            <a href="semester-notes.html">7th Semester</a>
+                            <a href="semester-notes.html">8th Semester</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="old-questions.html" class="nav-link">Old Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mcqs.html" class="nav-link">MCQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notices.html" class="nav-link">Notices</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active">
+                            Resources <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#study-materials">Study Materials</a>
+                            <a href="#video-lectures">Video Lectures</a>
+                            <a href="#practice-tests">Practice Tests</a>
+                            <a href="#reference-books">Reference Books</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search resources...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="account-btn">
+                        <i class="fas fa-user"></i>
+                        Account
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Learning Resources</h1>
+                <p>Comprehensive collection of study materials, tools, and references</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Resources</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+        <div class="container">
+            <div class="resource-tabs">
+                <button class="resource-tab active" data-tab="study-materials">
+                    <i class="fas fa-book"></i>
+                    Study Materials
+                </button>
+                <button class="resource-tab" data-tab="video-lectures">
+                    <i class="fas fa-play-circle"></i>
+                    Video Lectures
+                </button>
+                <button class="resource-tab" data-tab="practice-tests">
+                    <i class="fas fa-clipboard-check"></i>
+                    Practice Tests
+                </button>
+                <button class="resource-tab" data-tab="reference-books">
+                    <i class="fas fa-bookmark"></i>
+                    Reference Books
+                </button>
+                <button class="resource-tab" data-tab="tools">
+                    <i class="fas fa-tools"></i>
+                    Study Tools
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Materials Tab -->
+    <section class="resource-content active" id="study-materials">
+        <div class="container">
+            <h2 class="section-title">Study Materials</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-content-area">
+                        <h3>Complete Programming Guide</h3>
+                        <p>Comprehensive guide covering C, C++, Java, and Python programming fundamentals with examples and exercises.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 2.5k downloads</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-file"></i> PDF, 250 pages</span>
+                        </div>
+                    </div>
+                    <div class="resource-actions">
+                        <button class="btn-primary" onclick="downloadResource('programming-guide')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button class="btn-secondary" onclick="previewResource('programming-guide')">
+                            <i class="fas fa-eye"></i> Preview
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="resource-content-area">
+                        <h3>Database Design Handbook</h3>
+                        <p>Essential guide to database design principles, normalization, SQL queries, and database management systems.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 1.8k downloads</span>
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                            <span><i class="fas fa-file"></i> PDF, 180 pages</span>
+                        </div>
+                    </div>
+                    <div class="resource-actions">
+                        <button class="btn-primary" onclick="downloadResource('database-handbook')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button class="btn-secondary" onclick="previewResource('database-handbook')">
+                            <i class="fas fa-eye"></i> Preview
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="resource-content-area">
+                        <h3>Network Security Essentials</h3>
+                        <p>Complete coverage of network security concepts, protocols, cryptography, and security implementation strategies.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 1.2k downloads</span>
+                            <span><i class="fas fa-star"></i> 4.6/5</span>
+                            <span><i class="fas fa-file"></i> PDF, 320 pages</span>
+                        </div>
+                    </div>
+                    <div class="resource-actions">
+                        <button class="btn-primary" onclick="downloadResource('network-security')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button class="btn-secondary" onclick="previewResource('network-security')">
+                            <i class="fas fa-eye"></i> Preview
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="resource-content-area">
+                        <h3>AI & Machine Learning Primer</h3>
+                        <p>Introduction to artificial intelligence, machine learning algorithms, and practical implementation examples.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 3.1k downloads</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-file"></i> PDF, 280 pages</span>
+                        </div>
+                    </div>
+                    <div class="resource-actions">
+                        <button class="btn-primary" onclick="downloadResource('ai-ml-primer')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button class="btn-secondary" onclick="previewResource('ai-ml-primer')">
+                            <i class="fas fa-eye"></i> Preview
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Lectures Tab -->
+    <section class="resource-content" id="video-lectures">
+        <div class="container">
+            <h2 class="section-title">Video Lectures</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">45:30</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>Data Structures Fundamentals</h3>
+                        <p>Complete introduction to arrays, linked lists, stacks, and queues with practical implementations.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 15.2k views</span>
+                            <span><i class="fas fa-thumbs-up"></i> 1.2k likes</span>
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                        </div>
+                        <button class="btn-play" onclick="playVideo('data-structures-fundamentals')">
+                            <i class="fas fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">38:15</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>Object-Oriented Programming</h3>
+                        <p>Comprehensive coverage of OOP concepts including classes, objects, inheritance, and polymorphism.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 12.8k views</span>
+                            <span><i class="fas fa-thumbs-up"></i> 980 likes</span>
+                            <span><i class="fas fa-clock"></i> 38 min</span>
+                        </div>
+                        <button class="btn-play" onclick="playVideo('oop-concepts')">
+                            <i class="fas fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">52:20</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>Database Design & SQL</h3>
+                        <p>Learn database design principles, normalization, and advanced SQL queries with real-world examples.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 18.5k views</span>
+                            <span><i class="fas fa-thumbs-up"></i> 1.5k likes</span>
+                            <span><i class="fas fa-clock"></i> 52 min</span>
+                        </div>
+                        <button class="btn-play" onclick="playVideo('database-sql')">
+                            <i class="fas fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">41:45</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>Computer Networks Basics</h3>
+                        <p>Understanding network protocols, OSI model, TCP/IP, and network security fundamentals.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 9.7k views</span>
+                            <span><i class="fas fa-thumbs-up"></i> 756 likes</span>
+                            <span><i class="fas fa-clock"></i> 42 min</span>
+                        </div>
+                        <button class="btn-play" onclick="playVideo('network-basics')">
+                            <i class="fas fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Tests Tab -->
+    <section class="resource-content" id="practice-tests">
+        <div class="container">
+            <h2 class="section-title">Practice Tests</h2>
+            <div class="tests-grid">
+                <div class="test-card">
+                    <div class="test-header">
+                        <div class="test-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="test-difficulty easy">Easy</div>
+                    </div>
+                    <div class="test-content">
+                        <h3>Programming Basics Test</h3>
+                        <p>Test your understanding of basic programming concepts, variables, loops, and functions.</p>
+                        <div class="test-stats">
+                            <span><i class="fas fa-question-circle"></i> 25 Questions</span>
+                            <span><i class="fas fa-clock"></i> 30 minutes</span>
+                            <span><i class="fas fa-users"></i> 2.1k attempts</span>
+                        </div>
+                    </div>
+                    <div class="test-actions">
+                        <button class="btn-primary" onclick="startTest('programming-basics')">
+                            <i class="fas fa-play"></i> Start Test
+                        </button>
+                        <button class="btn-secondary" onclick="viewTestDetails('programming-basics')">
+                            <i class="fas fa-info"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="test-card">
+                    <div class="test-header">
+                        <div class="test-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="test-difficulty medium">Medium</div>
+                    </div>
+                    <div class="test-content">
+                        <h3>Database Management Test</h3>
+                        <p>Advanced test covering SQL queries, database design, normalization, and transactions.</p>
+                        <div class="test-stats">
+                            <span><i class="fas fa-question-circle"></i> 30 Questions</span>
+                            <span><i class="fas fa-clock"></i> 45 minutes</span>
+                            <span><i class="fas fa-users"></i> 1.8k attempts</span>
+                        </div>
+                    </div>
+                    <div class="test-actions">
+                        <button class="btn-primary" onclick="startTest('database-management')">
+                            <i class="fas fa-play"></i> Start Test
+                        </button>
+                        <button class="btn-secondary" onclick="viewTestDetails('database-management')">
+                            <i class="fas fa-info"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="test-card">
+                    <div class="test-header">
+                        <div class="test-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="test-difficulty hard">Hard</div>
+                    </div>
+                    <div class="test-content">
+                        <h3>Computer Networks Test</h3>
+                        <p>Comprehensive test on network protocols, security, routing, and network troubleshooting.</p>
+                        <div class="test-stats">
+                            <span><i class="fas fa-question-circle"></i> 35 Questions</span>
+                            <span><i class="fas fa-clock"></i> 60 minutes</span>
+                            <span><i class="fas fa-users"></i> 1.2k attempts</span>
+                        </div>
+                    </div>
+                    <div class="test-actions">
+                        <button class="btn-primary" onclick="startTest('computer-networks')">
+                            <i class="fas fa-play"></i> Start Test
+                        </button>
+                        <button class="btn-secondary" onclick="viewTestDetails('computer-networks')">
+                            <i class="fas fa-info"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Books Tab -->
+    <section class="resource-content" id="reference-books">
+        <div class="container">
+            <h2 class="section-title">Reference Books</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <div class="book-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="book-content">
+                        <h3>Introduction to Algorithms</h3>
+                        <p class="book-author">by Thomas H. Cormen</p>
+                        <p class="book-description">Comprehensive introduction to algorithms and data structures with mathematical analysis.</p>
+                        <div class="book-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.8/5 (1,245 reviews)</span>
+                        </div>
+                        <div class="book-actions">
+                            <button class="btn-primary" onclick="viewBook('intro-algorithms')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <button class="btn-secondary" onclick="downloadBook('intro-algorithms')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <div class="book-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="book-content">
+                        <h3>Database System Concepts</h3>
+                        <p class="book-author">by Abraham Silberschatz</p>
+                        <p class="book-description">Complete guide to database systems, design, and implementation with practical examples.</p>
+                        <div class="book-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.6/5 (892 reviews)</span>
+                        </div>
+                        <div class="book-actions">
+                            <button class="btn-primary" onclick="viewBook('database-concepts')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <button class="btn-secondary" onclick="downloadBook('database-concepts')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <div class="book-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="book-content">
+                        <h3>Computer Networks</h3>
+                        <p class="book-author">by Andrew S. Tanenbaum</p>
+                        <p class="book-description">Comprehensive coverage of computer networks, protocols, and network programming.</p>
+                        <div class="book-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.7/5 (1,056 reviews)</span>
+                        </div>
+                        <div class="book-actions">
+                            <button class="btn-primary" onclick="viewBook('computer-networks')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <button class="btn-secondary" onclick="downloadBook('computer-networks')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Tools Tab -->
+    <section class="resource-content" id="tools">
+        <div class="container">
+            <h2 class="section-title">Study Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Algorithm Complexity Calculator</h3>
+                        <p>Calculate time and space complexity of algorithms with step-by-step analysis.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Big O Notation</span>
+                            <span><i class="fas fa-check"></i> Visual Analysis</span>
+                            <span><i class="fas fa-check"></i> Comparison Tool</span>
+                        </div>
+                        <button class="btn-primary" onclick="openTool('complexity-calculator')">
+                            <i class="fas fa-external-link-alt"></i> Launch Tool
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Code Compiler & Runner</h3>
+                        <p>Online compiler supporting multiple programming languages with syntax highlighting.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Multi-language Support</span>
+                            <span><i class="fas fa-check"></i> Real-time Compilation</span>
+                            <span><i class="fas fa-check"></i> Debug Mode</span>
+                        </div>
+                        <button class="btn-primary" onclick="openTool('code-compiler')">
+                            <i class="fas fa-external-link-alt"></i> Launch Tool
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Database ER Diagram Tool</h3>
+                        <p>Create and visualize entity-relationship diagrams for database design projects.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Drag & Drop Interface</span>
+                            <span><i class="fas fa-check"></i> Export Options</span>
+                            <span><i class="fas fa-check"></i> Collaboration</span>
+                        </div>
+                        <button class="btn-primary" onclick="openTool('er-diagram')">
+                            <i class="fas fa-external-link-alt"></i> Launch Tool
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Flashcard Generator</h3>
+                        <p>Create interactive flashcards for memorizing key concepts and definitions.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Custom Categories</span>
+                            <span><i class="fas fa-check"></i> Spaced Repetition</span>
+                            <span><i class="fas fa-check"></i> Progress Tracking</span>
+                        </div>
+                        <button class="btn-primary" onclick="openTool('flashcard-generator')">
+                            <i class="fas fa-external-link-alt"></i> Launch Tool
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Hamro BIT</span>
+                    </div>
+                    <p>Your trusted companion for academic excellence in Computer Science and Information Technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="semester-notes.html">Semester Notes</a></li>
+                        <li><a href="old-questions.html">Old Questions</a></li>
+                        <li><a href="mcqs.html">MCQ Practice</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new materials and features.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;  2025 Hamro BIT. All rights reserved. | Educational content for learning purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="resources.js"></script>
+</body>
+</html>

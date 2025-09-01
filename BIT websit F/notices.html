@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices - Hamro BIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Hamro BIT</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Semester Notes <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="semester-notes.html">1st Semester</a>
+                            <a href="semester-notes.html">2nd Semester</a>
+                            <a href="semester-notes.html">3rd Semester</a>
+                            <a href="semester-notes.html">4th Semester</a>
+                            <a href="semester-notes.html">5th Semester</a>
+                            <a href="semester-notes.html">6th Semester</a>
+                            <a href="semester-notes.html">7th Semester</a>
+                            <a href="semester-notes.html">8th Semester</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="old-questions.html" class="nav-link">Old Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mcqs.html" class="nav-link">MCQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notices.html" class="nav-link active">Notices</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Resources <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="resources.html">Study Materials</a>
+                            <a href="resources.html">Video Lectures</a>
+                            <a href="resources.html">Practice Tests</a>
+                            <a href="resources.html">Reference Books</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search notices...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="account-btn">
+                        <i class="fas fa-user"></i>
+                        Account
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Latest Notices & Announcements</h1>
+                <p>Stay updated with important academic information and announcements</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Notices</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Categories -->
+    <section class="notice-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">All Notices</button>
+                <button class="category-filter" data-category="exam">Examinations</button>
+                <button class="category-filter" data-category="academic">Academic</button>
+                <button class="category-filter" data-category="admission">Admissions</button>
+                <button class="category-filter" data-category="event">Events</button>
+                <button class="category-filter" data-category="general">General</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices Section -->
+    <section class="notices-section">
+        <div class="container">
+            <div class="notices-grid">
+                <!-- Important Notice -->
+                <div class="notice-card important" data-category="exam">
+                    <div class="notice-header">
+                        <div class="notice-badge important">Important</div>
+                        <div class="notice-date">Dec 15, 2024</div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Final Semester Examination Schedule Released</h3>
+                        <p>The examination schedule for all semester final exams has been published. Students are advised to check their respective timetables and prepare accordingly.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Examinations</span>
+                            <span><i class="fas fa-eye"></i> 1,245 views</span>
+                        </div>
+                    </div>
+                    <div class="notice-actions">
+                        <button class="btn-primary" onclick="viewNotice('exam-schedule-2024')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="btn-secondary" onclick="downloadNotice('exam-schedule-2024')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Regular Notice -->
+                <div class="notice-card" data-category="academic">
+                    <div class="notice-header">
+                        <div class="notice-badge">New</div>
+                        <div class="notice-date">Dec 12, 2024</div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Updated Course Curriculum for 2025</h3>
+                        <p>The academic board has approved updates to the computer science curriculum effective from the 2025 academic year. New subjects and revised syllabus details are available.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Academic</span>
+                            <span><i class="fas fa-eye"></i> 892 views</span>
+                        </div>
+                    </div>
+                    <div class="notice-actions">
+                        <button class="btn-primary" onclick="viewNotice('curriculum-update-2025')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="btn-secondary" onclick="downloadNotice('curriculum-update-2025')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Admission Notice -->
+                <div class="notice-card" data-category="admission">
+                    <div class="notice-header">
+                        <div class="notice-badge admission">Admission</div>
+                        <div class="notice-date">Dec 10, 2024</div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Spring Semester 2025 Admission Open</h3>
+                        <p>Applications are now open for spring semester 2025 admission. Interested candidates can apply online through the official portal. Last date for application is January 15, 2025.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Admissions</span>
+                            <span><i class="fas fa-eye"></i> 2,156 views</span>
+                        </div>
+                    </div>
+                    <div class="notice-actions">
+                        <button class="btn-primary" onclick="viewNotice('spring-admission-2025')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="btn-secondary" onclick="downloadNotice('spring-admission-2025')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event Notice -->
+                <div class="notice-card" data-category="event">
+                    <div class="notice-header">
+                        <div class="notice-badge event">Event</div>
+                        <div class="notice-date">Dec 8, 2024</div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Annual Tech Symposium 2024</h3>
+                        <p>Join us for the Annual Tech Symposium featuring industry experts, workshops, and networking opportunities. Registration is free for all students.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Events</span>
+                            <span><i class="fas fa-eye"></i> 756 views</span>
+                        </div>
+                    </div>
+                    <div class="notice-actions">
+                        <button class="btn-primary" onclick="viewNotice('tech-symposium-2024')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="btn-secondary" onclick="registerEvent('tech-symposium-2024')">
+                            <i class="fas fa-user-plus"></i> Register
+                        </button>
+                    </div>
+                </div>
+
+                <!-- General Notice -->
+                <div class="notice-card" data-category="general">
+                    <div class="notice-header">
+                        <div class="notice-badge">General</div>
+                        <div class="notice-date">Dec 5, 2024</div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Library Hours Extended During Exam Period</h3>
+                        <p>The library will remain open 24/7 during the examination period from December 20 to January 10. Additional study spaces and resources will be available.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> General</span>
+                            <span><i class="fas fa-eye"></i> 634 views</span>
+                        </div>
+                    </div>
+                    <div class="notice-actions">
+                        <button class="btn-primary" onclick="viewNotice('library-hours-extended')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Academic Notice -->
+                <div class="notice-card" data-category="academic">
+                    <div class="notice-header">
+                        <div class="notice-badge">Academic</div>
+                        <div class="notice-date">Dec 3, 2024</div>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Project Submission Guidelines Updated</h3>
+                        <p>New guidelines for final year project submissions have been released. Please review the updated format requirements and submission deadlines.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Academic</span>
+                            <span><i class="fas fa-eye"></i> 1,089 views</span>
+                        </div>
+                    </div>
+                    <div class="notice-actions">
+                        <button class="btn-primary" onclick="viewNotice('project-guidelines-2024')">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="btn-secondary" onclick="downloadNotice('project-guidelines-2024')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn-load-more" onclick="loadMoreNotices()">
+                    <i class="fas fa-plus"></i> Load More Notices
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Hamro BIT</span>
+                    </div>
+                    <p>Your trusted companion for academic excellence in Computer Science and Information Technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="semester-notes.html">Semester Notes</a></li>
+                        <li><a href="old-questions.html">Old Questions</a></li>
+                        <li><a href="mcqs.html">MCQ Practice</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new materials and features.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;  2025 Hamro BIT. All rights reserved. | Educational content for learning purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="notices.js"></script>
+</body>
+</html>
